@@ -58,7 +58,7 @@ def main():
     parser = argparse.ArgumentParser(description="Loadgen for OTLP logs")
     parser.add_argument("--duration", type=int, default=15, help="Duration in seconds (default: 15)")
     parser.add_argument("--batch-size", type=int, default=10000, help="Number of logs per batch (default: 10000)")
-    parser.add_argument("--threads", type=int, default=8, help="Number of worker threads (default: 8)")
+    parser.add_argument("--threads", type=int, default=4, help="Number of worker threads (default: 8)")
     args = parser.parse_args()
 
     end_time = time.time() + args.duration
